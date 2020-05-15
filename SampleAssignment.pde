@@ -30,7 +30,7 @@ class confetti{
 	public confetti(){
 		myX=(double)(Math.random()*800);
 		myY=0;
-		mySY=(double)(Math.random()*2);
+		mySY=(double)(Math.random()*1.5)+0.5;
 		myR=(int)(Math.random()*100)+150;
 	}
 	public void move(){
@@ -118,14 +118,17 @@ noStroke();
 fill(214, 190, 135);
 triangle(300,298,293,320,307,320);
 ellipse(300,318,12,12);
-//mouth
-fill(209, 121, 154);
-ellipse(295,335,20,5);
-ellipse(305,335,20,5);
-ellipse(300,337,25,10);
 //facial hair
 fill(148, 147, 146);
-arc(300, 337, 38, 15, PI,2*PI);
+ellipse(300, 345, 38, 38);
+//mouth
+fill(209, 121, 154);
+//ellipse(295,335,20,5);
+//ellipse(305,335,20,5);
+stroke(156, 81, 106);
+strokeWeight(3);
+arc(300,337,25,10,0,PI);
+noStroke();
 //arms
 fill(214, 190, 135);
 pushMatrix();
